@@ -1,6 +1,8 @@
 # task-search-repos
 Написать блок с поиском репозиториев github по подстроке
 
+https://languoruna.github.io/task-search-repos/
+
 Документация по работе с API здесь:
 
 https://docs.github.com/en/rest/search?apiVersion=2022-11-28
