@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+}
+body {
+  background-color: #edeef0;
+  font-family: "Roboto", sans-serif;
+  color: #818c99;
+  text-decoration-skip-ink: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 20px 0;
+}
+@media screen and (max-width: 1200px) {
+  .page {
+    width: 80%;
+  }
+}
+
+.form {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  gap: 12px;
+  padding: 12px;
+}
+.form__search {
+  width: calc(100% - 24px);
+  color: #818c99;
+  background-color: #ffffff;
+  border: 1px solid #d3d9de;
+  border-radius: 6px;
+  padding: 9px 12px 10px;
+  line-height: 15px;
+  word-wrap: break-word;
+  font-family: inherit;
+}
+.form__search::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+.form__button {
+  background-color: #673ab7;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: #e1e3e6;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form, .repos {
+  border: 1px solid #d3d9de;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.repos {
+  overflow: auto;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  scrollbar-color: #d3d9de transparent;
+  scrollbar-width: thin;
+}
+.repos__empty {
+  margin: 40px 0;
+  align-self: center;
+}
+.repos::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  border-radius: 6px;
+}
+.repos::-webkit-scrollbar-thumb {
+  background-color: #d3d9de;
+  border-radius: 9em;
+}
+@media screen and (max-width: 1000px) {
+  .repos {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .repos {
+    height: 300px;
+  }
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #d3d9de;
+  line-height: 15px;
+  word-wrap: break-word;
+}
+.repo__row {
+  display: flex;
+}
+.repo__title {
+  color: #673ab7;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.repo__avatar {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.repo__author {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.repo__author-name {
+  color: #673ab7;
+}
+
+/*# sourceMappingURL=styles.css.map */

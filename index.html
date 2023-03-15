@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок с поиском репозиториев</title>
+</head>
+<body>
+<div class="page">
+    <form class="form">
+        <input type="search" name="search" id="search"
+               class="form__search"
+               placeholder="Поиск репозитория"
+               minlength="2"
+               required
+               autocomplete="off">
+        <button type="submit" class="form__button">Найти</button>
+    </form>
+    <div class="repos">
+        <span class="repos__empty">Поиск по репозиториям GitHub</span>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
